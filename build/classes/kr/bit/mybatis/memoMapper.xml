@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.bit.mybatis.memoMapper">
+
+	<select id="memoList" resultType="kr.bit.model.MemoVO">
+		select*from memo order by mnum desc
+	</select>
+
+	<insert id="memoInsert" parameterType="kr.bit.model.MemoVO">
+
+		insert into memo (mname, mcontent) values (#{mname}, #{mcontent})
+	</insert>
+
+	<select id="memoContent" parameterType="int" resultType="kr.bit.model.MemoVO">
+		select*from memo where mnum = #{mnum}
+	</select>
+
+	<delete id="memoDelete" parameterType="int">
+		delete from memo where mnum = #{mnum}
+	</delete>
+
+	<update id="memoUpdate" parameterType="kr.bit.model.MemoVO">
+		update memo set mcontent = #{mcontent} where mnum = #{mnum}
+	</update>
+
+
+</mapper>

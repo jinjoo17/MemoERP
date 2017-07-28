@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+  <command key="/mList.mo" value="kr.bit.controller.MemoListController"/>
+  <command key="/mInsert.mo" value="kr.bit.controller.MemoInsertController"/>
+  <command key="/mInsertForm.mo" value="kr.bit.controller.MemoInsertFormController"/>
+  <command key="/mDelete.mo" value="kr.bit.controller.MemoDeleteController"/>
+  <command key="/mUpdate.mo" value="kr.bit.controller.MemoUpdateController"/>
+  <command key="/mUpdateForm.mo" value="kr.bit.controller.MemoUpdateFormController"/>
+  <command key="/mContent.mo" value="kr.bit.controller.MemoContentController"/>
+</mappings>		
